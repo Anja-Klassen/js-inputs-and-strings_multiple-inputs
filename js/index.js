@@ -5,8 +5,11 @@ const firstCopyInput = document.querySelector("[data-js=first-copy-input]");
 const secondCopyInput = document.querySelector("[data-js=second-copy-input]");
 const copyButton = document.querySelector("[data-js=copy-button]");
 
-// --v-- write your code here --v--
 
+// --v-- write your code here --v--
+copyButton.addEventListener("click", () =>{
+  secondCopyInput.value= firstCopyInput.value;
+})
 // --^-- write your code here --^--
 
 /* Sub-Challenge 2
@@ -23,7 +26,9 @@ const copyInUppercaseButton = document.querySelector(
 );
 
 // --v-- write your code here --v--
-
+copyInUppercaseButton.addEventListener("click", () =>{
+  secondCopyInUppercaseInput.value= firstCopyInUppercaseInput.value.toUpperCase(); 
+})
 // --^-- write your code here --^--
 
 /* Sub-Challenge 3
